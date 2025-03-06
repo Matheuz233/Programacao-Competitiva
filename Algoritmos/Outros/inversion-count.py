@@ -8,6 +8,7 @@
 #
 # Complexidade: O(n²), pois o algoritmo utiliza dois loops aninhados para comparar todos os pares.
 
+
 def inversionCount(arr):
     n = len(arr)
     invCount = 0
@@ -17,3 +18,8 @@ def inversionCount(arr):
             if arr[i] > arr[j]:
                 invCount += 1
     return invCount
+
+
+print(inversionCount([1, 3, 2]))  # Resultado: 1
+print(inversionCount([4, 3, 2, 1]))  # Resultado: 6
+print(inversionCount([2, 1]))  # Resultado: 1
